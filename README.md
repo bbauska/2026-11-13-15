@@ -1,4 +1,12 @@
 # 2026-11-13-15
+
+<FollowUp>
+If you'd like to customize or expand this webpage, let me know if you want to add:
+* **Interactive filtering** by topic or date using JavaScript
+* **A dedicated timeline section** matching regulatory rulings to business announcements
+* **Dark mode styling** or a different color palette
+</FollowUp>
+
 Grift and crimes in the US government. Crimes committed daily.
 
 Economy, Inflation, and Tariffs
