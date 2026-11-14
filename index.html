@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Public Oversight &amp; Ethics Tracker: Donald Trump Jr. Business Ties (2025–2026)</title>
+  <style>
+    :root {
+      --bg-color: #f8fafc;
+      --surface-color: #ffffff;
+      --text-primary: #0f172a;
+      --text-secondary: #475569;
+      --accent-color: #1e3a8a;
+      --accent-light: #eff6ff;
+      --border-color: #e2e8f0;
+      --badge-bg: #f1f5f9;
+      --badge-text: #334155;
+      --disclaimer-bg: #fffbeb;
+      --disclaimer-border: #fde68a;
+      --disclaimer-text: #92400e;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-primary);
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Header & Navigation */
+    header {
+      background-color: var(--text-primary);
+      color: #ffffff;
+      padding: 3rem 1.5rem 2.5rem;
+      border-bottom: 4px solid var(--accent-color);
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+    }
+
+    .eyebrow {
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: #93c5fd;
+      margin-bottom: 0.5rem;
+    }
+
+    header h1 {
+      font-size: 2.1rem;
+      line-height: 1.2;
+      font-weight: 800;
+      margin-bottom: 0.75rem;
+    }
+
+    header p.subtitle {
+      color: #cbd5e1;
+      font-size: 1.05rem;
+      max-width: 740px;
+    }
+
+    nav.quick-nav {
+      background-color: var(--surface-color);
+      border-bottom: 1px solid var(--border-color);
+      padding: 0.85rem 1.5rem;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav.quick-nav ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.25rem;
+      max-width: 960px;
+      margin: 0 auto;
+    }
+
+    nav.quick-nav a {
+      text-decoration: none;
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+      font-weight: 600;
+      transition: color 0.15s ease;
+    }
+
+    nav.quick-nav a:hover {
+      color: var(--accent-color);
+    }
+
+    /* Main Content */
+    main {
+      padding: 2rem 1.5rem 4rem;
+    }
+
+    .disclaimer-box {
+      background-color: var(--disclaimer-bg);
+      border: 1px solid var(--disclaimer-border);
+      color: var(--disclaimer-text);
+      padding: 1rem 1.25rem;
+      border-radius: 8px;
+      font-size: 0.92rem;
+      margin-bottom: 2.25rem;
+    }
+
+    .section-heading {
+      font-size: 1.45rem;
+      font-weight: 700;
+      margin-bottom: 1.25rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid var(--border-color);
+      color: var(--text-primary);
+    }
+
+    /* Cards */
+    .card-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+      margin-bottom: 3rem;
+    }
+
+    .card {
+      background-color: var(--surface-color);
+      border: 1px solid var(--border-color);
+      border-radius: 10px;
+      padding: 1.5rem 1.75rem;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+    }
+
+    .card-header {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 0.5rem;
+      margin-bottom: 0.85rem;
+    }
+
+    .card h3 {
+      font-size: 1.2rem;
+      color: var(--text-primary);
+      font-weight: 700;
+    }
+
+    .badge {
+      background-color: var(--badge-bg);
+      color: var(--badge-text);
+      font-size: 0.78rem;
+      font-weight: 600;
+      padding: 0.25rem 0.65rem;
+      border-radius: 999px;
+      border: 1px solid var(--border-color);
+    }
+
+    .card p {
+      color: var(--text-secondary);
+      margin-bottom: 0.9rem;
+      font-size: 0.98rem;
+    }
+
+    .card p:last-child {
+      margin-bottom: 0;
+    }
+
+    .card strong {
+      color: var(--text-primary);
+    }
+
+    .source-tag {
+      display: inline-block;
+      margin-top: 0.4rem;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--accent-color);
+      text-decoration: none;
+    }
+
+    .source-tag:hover {
+      text-decoration: underline;
+    }
+
+    /* Archive Links List */
+    .archive-list {
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1rem;
+    }
+
+    .archive-item {
+      background-color: var(--surface-color);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 1.25rem;
+      transition: border-color 0.15s ease, transform 0.15s ease;
+    }
+
+    .archive-item:hover {
+      border-color: var(--accent-color);
+      transform: translateY(-2px);
+    }
+
+    .archive-item h4 {
+      font-size: 1rem;
+      margin-bottom: 0.4rem;
+    }
+
+    .archive-item h4 a {
+      color: var(--accent-color);
+      text-decoration: none;
+    }
+
+    .archive-item h4 a:hover {
+      text-decoration: underline;
+    }
+
+    .archive-item p {
+      font-size: 0.88rem;
+      color: var(--text-secondary);
+    }
+
+    /* Footer */
+    footer {
+      background-color: var(--surface-color);
+      border-top: 1px solid var(--border-color);
+      padding: 2rem 1.5rem;
+      text-align: center;
+      color: var(--text-secondary);
+      font-size: 0.88rem;
+    }
+
+    @media (max-width: 640px) {
+      header h1 {
+        font-size: 1.65rem;
+      }
+      .card {
+        padding: 1.25rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <div class="eyebrow">Public Oversight &amp; Ethics Summary (2025–2026)</div>
+      <h1>Conflict-of-Interest &amp; "Pay-to-Play" Inquiries Involving Donald Trump Jr.</h1>
+      <p class="subtitle">
+        A structured overview of congressional investigations, watchdog reports, and media documentation regarding business ventures, advisory roles, and federal policy actions during the second Trump administration.
+      </p>
+    </div>
+  </header>
+
+  <nav class="quick-nav" aria-label="Section Navigation">
+    <ul>
+      <li><a href="#allegations">Documented Inquiries</a></li>
+      <li><a href="#archives">Primary Sources &amp; Trackers</a></li>
+    </ul>
+  </nav>
+
+  <main class="container">
+    <div class="disclaimer-box" role="note">
+      <strong>Context &amp; Status:</strong> The items below reflect formal congressional inquiries, ethics watchdog analyses, and investigative reporting published in 2025 and 2026. Donald Trump Jr. and his representatives have denied any improper influence or wrongdoing, and no criminal charges have been filed.
+    </div>
+
+    <section id="allegations">
+      <h2 class="section-heading">Key Areas of Scrutiny</h2>
+
+      <div class="card-grid">
+        <!-- Card 1 -->
+        <article class="card">
+          <div class="card-header">
+            <h3>1. The "Executive Branch" Private Club</h3>
+            <span class="badge">Launched April 2025</span>
+          </div>
+          <p>
+            <strong>The Venture:</strong> Donald Trump Jr. co-founded "Executive Branch," an invite-only private club in Washington, D.C.'s Georgetown neighborhood, alongside conservative venture firm 1789 Capital.
+          </p>
+          <p>
+            <strong>The Scrutiny:</strong> The club reportedly charges a $500,000 founding membership fee (and up to $1 million for priority placement) while hosting Cabinet secretaries, White House officials, and corporate executives. Ethics critics have characterized the club as a mechanism for monetizing access to senior policymakers.
+          </p>
+          <a class="source-tag" href="https://cnbc.com" target="_blank" rel="noopener noreferrer">Source: CNBC Reporting &rarr;</a>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="card">
+          <div class="card-header">
+            <h3>2. 1789 Capital Investments &amp; Federal Awards</h3>
+            <span class="badge">House &amp; Senate Probes (2026)</span>
+          </div>
+          <p>
+            <strong>The Venture:</strong> After Trump Jr. joined 1789 Capital Management, the firm expanded to over $3 billion in assets. Portfolio company Vulcan Elements saw a major valuation increase following a $620 million Defense Department loan and a $50 million Commerce Department grant, while Juul received FDA authorization for five products after 1789 Capital acquired a $5 million stake.
+          </p>
+          <p>
+            <strong>The Scrutiny:</strong> In August 2026, House Judiciary Committee Ranking Member Jamie Raskin opened an investigation into federal awards benefiting 1789 Capital portfolio firms. Separately, Senators Elizabeth Warren, Richard Blumenthal, and Andy Kim launched inquiries into Pentagon contracts and Persian Gulf sales involving drone firms such as Powerus.
+          </p>
+          <a class="source-tag" href="https://house.gov" target="_blank" rel="noopener noreferrer">Source: House Judiciary Committee Democrats &rarr;</a>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="card">
+          <div class="card-header">
+            <h3>3. Prediction Markets &amp; Regulatory Rulings</h3>
+            <span class="badge">Ended November 2026</span>
+          </div>
+          <p>
+            <strong>The Venture:</strong> Trump Jr. accepted paid advisory positions with prediction market platforms Kalshi and Polymarket.
+          </p>
+          <p>
